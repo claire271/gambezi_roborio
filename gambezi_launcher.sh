@@ -2,11 +2,12 @@
 
 # Utility functions
 logfile="/home/admin/gambezi/gambezi.log"
+bin_lwsws="/usr/local/bin/lwsws"
 function start_lwsws {
         if [ -f $logfile ]; then
                 rm $logfile
         fi
-        lwsws > $logfile 2>&1 &
+        $bin_lwsws > $logfile 2>&1 &
 }
 function kill_lwsws {
         pids=$(ps -e | grep "lwsws$" | awk '{print $1}')
