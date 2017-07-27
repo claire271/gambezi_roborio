@@ -1,0 +1,11 @@
+{
+	"vhosts": [{
+		"name": "localhost",
+		"port": "7709",
+		"ws-protocols": [{
+			"gambezi-protocol": {
+				"status": "ok"
+			}
+		}]
+	}]
+}
