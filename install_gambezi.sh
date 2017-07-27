@@ -48,8 +48,8 @@ mkdir /etc/lwsws/conf.d
 cp gambezi-server /etc/lwsws/conf.d/
 
 # Install init script
-cp ./lwsws /etc/init.d/
-ln -s /etc/init.d/lwsws /etc/rc5.d/S99lwsws
+cp ./gambezi.sh /etc/init.d/
+ln -s /etc/init.d/gambezi.sh /etc/rc5.d/S99gambezi.sh
 
 # Cleanup
 opkg clean

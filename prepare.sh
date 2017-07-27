@@ -95,10 +95,10 @@ cp conf gambezi/
 cp gambezi-server gambezi/
 
 # Copy launchder
-cp gambezi_launchder.sh gambezi/
+cp gambezi_launcher.sh gambezi/
 
 # Copy init scripts
-cp lwsws gambezi/
+cp gambezi.sh gambezi/
 
 # Tar and send over the network
 tar czvf gambezi.tar.gz gambezi
