@@ -1,5 +1,17 @@
 #!/bin/bash
 
+### BEGIN INIT INFO
+# Provides:          gambezi
+# Required-Start:    $local_fs $network
+# Required-Stop:     $local_fs $network
+# Should-Start:      
+# Should-Stop:       
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Starts instance of gambezi
+# Description:       Starts instance of gambezi
+### END INIT INFO
+
 PID_GAMBEZI_LAUNCHER=/var/run/gambezi_launcher.pid
 GAMBEZI_LAUNCHER=/home/admin/gambezi/gambezi_launcher.sh
 
