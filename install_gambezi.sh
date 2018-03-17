@@ -42,7 +42,7 @@ rm -rf libwebsockets-2.2-stable
 # Build gambezi
 unzip gambezi.zip
 rm gambezi.zip
-cd gambezi-master
+cd gambezi-low_memory
 mkdir build
 cd build
 cmake ..
