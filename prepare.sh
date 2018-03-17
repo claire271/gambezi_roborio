@@ -83,8 +83,8 @@ wget -nc https://github.com/warmcat/libwebsockets/archive/v2.2-stable.zip
 mv v2.2-stable.zip libwebsockets.zip
 
 # Download Gambezi server
-wget -nc https://github.com/tigerh/gambezi/archive/master.zip
-mv master.zip gambezi.zip
+wget -nc https://github.com/tigerh/gambezi/archive/low_memory.zip
+mv low_memory.zip gambezi.zip
 cd ..
 
 # Copy opkg config files
