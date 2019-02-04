@@ -9,7 +9,7 @@ mkdir packages
 cd packages
 
 # Download package lists
-feeds_url=http://download.ni.com/ni-linux-rt/feeds/2017/arm
+feeds_url=http://download.ni.com/ni-linux-rt/feeds/2018/arm
 function get_package_list {
 	mkdir $1
 	cd $1
