@@ -13,7 +13,6 @@ rm local-feeds.conf
 # Install packages
 opkg update
 opkg install packagegroup-core-buildessential packagegroup-core-buildessential-dev openssl openssl-dev cmake
-opkg clean
 rm -rf packages
 
 # Build libuv
@@ -62,6 +61,10 @@ rm conf gambezi-server
 cp gambezi.sh /etc/init.d/
 ln -s /etc/init.d/gambezi.sh /etc/rc5.d/S99gambezi.sh
 rm gambezi.sh
+
+# Remove packages
+opkg remove packagegroup-core-buildessential packagegroup-core-buildessential-dev openssl-dev cmake
+opkg clean
 
 # Reboot
 init 6
